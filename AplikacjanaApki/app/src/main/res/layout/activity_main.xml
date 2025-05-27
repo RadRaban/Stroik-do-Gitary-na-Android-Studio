@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewResults"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Strona Główna"
+        android:textSize="50sp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <ImageButton
+        android:id="@+id/buttonPrzegladarka"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/www"
+        android:background="@null"
+        android:scaleType="centerInside"
+        android:contentDescription="@string/btn_go"
+        app:layout_constraintWidth_percent="0.33"
+        app:layout_constraintHeight_percent="0.20"
+        app:layout_constraintTop_toBottomOf="@+id/textViewResults"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <ImageButton
+        android:id="@+id/buttonTic"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/tictactoe"
+        android:background="@null"
+        android:scaleType="centerInside"
+        android:contentDescription="@string/btn_go"
+        app:layout_constraintWidth_percent="0.33"
+        app:layout_constraintHeight_percent="0.20"
+        app:layout_constraintTop_toBottomOf="@+id/textViewResults"
+        app:layout_constraintStart_toEndOf="@+id/buttonPrzegladarka"/>
+    <ImageButton
+        android:id="@+id/buttonPusty"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/the_skallywags"
+        android:background="@null"
+        android:scaleType="centerInside"
+        android:contentDescription="@string/btn_go"
+        app:layout_constraintWidth_percent="0.33"
+        app:layout_constraintHeight_percent="0.20"
+        app:layout_constraintTop_toBottomOf="@+id/textViewResults"
+        app:layout_constraintStart_toEndOf="@+id/buttonTic"/>
+
+
+    <ImageButton
+        android:id="@+id/buttonZegarek"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/clock"
+        android:background="@null"
+        android:scaleType="centerInside"
+        android:contentDescription="@string/btn_go"
+        app:layout_constraintWidth_percent="0.33"
+        app:layout_constraintHeight_percent="0.20"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPrzegladarka"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <ImageButton
+        android:id="@+id/buttonTuner"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/guitar"
+        android:background="@null"
+        android:scaleType="centerInside"
+        android:contentDescription="@string/btn_go"
+        app:layout_constraintWidth_percent="0.33"
+        app:layout_constraintHeight_percent="0.20"
+        app:layout_constraintTop_toBottomOf="@+id/buttonTic"
+        app:layout_constraintStart_toEndOf="@+id/buttonZegarek"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

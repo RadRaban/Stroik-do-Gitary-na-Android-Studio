@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Styl dla wszystkich przycisków -->
+    <style name="TransparentButton">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">100sp</item>
+    </style>
+    <!-- Styl dla okrągłego przycisku -->
+    <style name="RoundButton">
+        <item name="android:layout_width">70dp</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:background">@drawable/round_button</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginStart">5dp</item>
+    </style>
+</resources>
